@@ -23,7 +23,9 @@ nu3, a German company focusing on supplying supplements and nutritional food pro
 *1. Which countries should we focus on because of their CO2 emissions, both as a whole, as well as for different food categories?*  
 *2. Does non-animal product consumption minimise the effects of CO2 emissions from food consumption?*
 
-Fortunately, this data was scraped and cleaned by [Kasia Kulma](https://r-tastic.co.uk/post/from-messy-to-tidy/), so no further cleaning was required.
+Fortunately, this data was scraped and cleaned by [Kasia Kulma](https://r-tastic.co.uk/post/from-messy-to-tidy/), so no further cleaning was required. Below is a preview of the first 6 rows of our data:
+
+<img src="/images/table_1.png" width="1000">
 
 ## Methodology: K-Means Clustering
 
@@ -56,13 +58,23 @@ The two K-Means clustering we performed was for the purpose of answering our fir
 
 Creating our first K-Means clusters allows us to see very clearly the countries that emit the highest amount of CO2. This was achieved by adding up each of the listed CO2 emissions for each country, and creating our clusters based on consumption and emission. It is clear that those countries in cluster 3 are ones that we should focus on, since they are producing a large amount of CO2 emissions – with their average being 1560.16kg/person/year.
 
-<img src="/images/cluster_graph_1.png" width="500">
+<p float="left">
+  <img src="/images/cluster_graph_1.png" width="400">
+  <img src="/images/table_2.png" width="550">
+</p>
+
+This gives us a large group of countries:
+
+<img src="/images/table_3.png" width="1000">
 
 # Analysis for countries and specific food categories
 
 However, we want to make use of the data we have and look at countries and their individual food categories. Again, running our K-Means clustering based on both total consumption and CO2 emissions per country and food categories, we are able to see what food categories in each country are responsible for high levels of CO2 emissions.
 
-<img src="/images/cluster_graph_2.png" width="500">
+<p float="left">
+  <img src="/images/cluster_graph_2.png" width="400">
+  <img src="/images/table_4.png" width="550">
+</p>
 
 It is evident from our plots for each food category that countries and food categories, cluster 4 are responsible for a high number of CO2 emissions. The food category that is primarily included in this cluster is Beef, but we can also see some Lamb & Goat, from very large number of countries, similar to above. It was found that in this cluster, for each country and food category combination,
 there was an average of approximately *20kg/person/year consumed, resulting in almost 640kg/person/year of CO2 emissions*, while all other clusters exhibited a considerably smaller proportion (cluster 1 was the next largest, showing only a 3 times difference between the particular food category consumption and CO2 emissions).

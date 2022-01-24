@@ -4,7 +4,7 @@
 
 Food Consumption and CO2 Emissions.Rmd: .Rmd file which contains the code I used to create this project.
 
-Food-Consumption-and-CO2-Emissions.html: Output from RMarkdown in a clean format with collapsible code chunks.
+Food-Consumption-and-CO2-Emissions.pdf: Output from RMarkdown in containig full report along with my code.
 
 food_consumption.csv: Original dataset.
 

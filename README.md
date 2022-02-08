@@ -396,6 +396,10 @@ greater than 0.5. To strengthen this, we have also calculated Pearson’s
 correlation coefficient between the two variables, attaining a value of
 0.71, indicating a moderately strong positive relationship.
 
+*EDIT: I understand that removing outliers (or data in general) for our analysis
+is not ideal, so please note that this has been done, but I understand the implications
+of doing so.*
+
 ``` r
 #Ranking each country based on total CO2 emissions
 country.rankings <- food.consumption.by.country %>%
